@@ -11,6 +11,7 @@ export class PasswordUtil {
   }
 
   static async comparePassword(password: string, hash: string): Promise<boolean> {
+    console.debug('ComparePassword', password);
     try {
       return await bcrypt.compare(password, hash);
     } catch (error) {

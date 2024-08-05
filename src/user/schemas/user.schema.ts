@@ -6,7 +6,7 @@ export type UserDocument = User & Document;
 @Schema()
 export class User {
   @Prop({ required: true })
-  userName: string;
+  username: string;
   @Prop()
   firstName: string;
   @Prop()
@@ -20,7 +20,7 @@ export class User {
   
   @Prop()
   gravatar: string;
-  @Prop({ required: true })
+  @Prop({ required: true, default: 'USER' })
   roles: string[];
   @Prop()
   qrCode: string; // For agents

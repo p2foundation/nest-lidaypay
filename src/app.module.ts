@@ -12,13 +12,18 @@ import { MONGODB_URI } from './constants';
 import { EmailService } from './utilities/email.service';
 import { SmsService } from './utilities/sms.util';
 import { HttpModule } from '@nestjs/axios';
+import { ConfigModule } from '@nestjs/config';
+import configuration from './configs/configuration';
 
 @Module({
   imports: [
+    ConfigModule.forRoot({
+      load: [configuration]
+    }),    
     MongooseModule.forRoot(process.env.MONGODB_URI || MONGODB_URI),  
     AuthModule, 
     UserModule, 
-    MerchantModule, 
+    MerchantModule,
     AffiliateModule, 
     RewardModule, 
     TransactionModule,

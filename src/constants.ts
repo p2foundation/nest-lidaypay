@@ -1,7 +1,6 @@
 export const SERVER_PORT = '1124';
-export const MONGODB_URI ='mongodb+srv://advansistechnology:Y1VPrv9zPPi1ZyJR@cluster0.ht8lvd6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
-export const JWT_SECRET = 'fWUsxRBDy2N$zS@b9nmxT]XQjRV';
-export const SECRET_KEY = 'AEvy>F.Da]S4R+QzBwdK7';
+export const MONGODB_URI = 'mongodb+srv://advansistechnology:Y1VPrv9zPPi1ZyJR@cluster0.ht8lvd6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
+export const JWT_SECRET = 'aflKxwRJSMeK9F2QT4fwpMeJf36POk6yJV_adQssw5c';
 export const JWT_EXPIRE = 3600;
 export const MOMO_CHARGES = 0.002;
 export const DISCOUNT = 0.0;
